@@ -4,7 +4,7 @@ import os
 from typing import AsyncGenerator
 from pydantic import BaseModel
 load_dotenv()
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY","AIzaSyDzlzf9di9yJzpS9SW74Ga0qmSNJF1Aye0")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 

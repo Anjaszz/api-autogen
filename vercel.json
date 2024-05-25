@@ -9,8 +9,8 @@
   ],
   "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "main.py"
+      "source": "/(.*)",
+      "destination": "main.py"
     }
   ],
   

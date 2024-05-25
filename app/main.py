@@ -8,7 +8,7 @@ from app.libs.GeminiAI import response_generator
 
 app = FastAPI()
 
-origins = ["https://autogen-mk.vercel.app", "http://localhost", "http://localhost:5173","https://vercel.app","https://vercel.com"]
+origins = ["https://makalahh-ai.vercel.app", "https://autogen-ai.vercel.app", "http://localhost:5173","https://vercel.app","https://vercel.com"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,7 +26,7 @@ class RequestMessage(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World Abal-Abal"}
+    return {"message": "Makalah AI"}
 
 
 @app.post("/request-message/")
